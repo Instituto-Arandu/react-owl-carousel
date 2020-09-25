@@ -1,7 +1,3 @@
-import jQuery from 'jquery'
-
-window.jQuery = jQuery
-
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react')) :
     typeof define === 'function' && define.amd ? define(['react'], factory) :
@@ -24,7 +20,9 @@ window.jQuery = jQuery
     See the Apache Version 2.0 License for specific language governing permissions
     and limitations under the License.
     ***************************************************************************** */
-    /* global Reflect, Promise */
+	/* global Reflect, Promise */
+
+	window.jQuery = require('jquery')
 
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
