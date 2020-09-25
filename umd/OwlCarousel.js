@@ -1,3 +1,7 @@
+import jQuery from 'jquery'
+
+window.jQuery = jQuery
+
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react')) :
     typeof define === 'function' && define.amd ? define(['react'], factory) :
@@ -1792,7 +1796,7 @@
     	 */
     	$.fn.owlCarousel.Constructor = Owl;
 
-    })(window.Zepto || window.jQuery, window, document);
+    })(window.jQuery || window.Zepto, window, document);
     (function($, window, document, undefined) {
 
     	/**
